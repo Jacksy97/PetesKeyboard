@@ -68,23 +68,41 @@ namespace Keyboard
 
             if (pressCount == 2)
             {
-
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
               txtDisplay.Text = txtDisplay.Text + "b";
-             
-              
-
-
-            }
+                       }
 
             if (pressCount == 3)
             {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
                 txtDisplay.Text = txtDisplay.Text + "c";
-                pressCount = 0;
-              
-                
-
 
             }
+                 if (pressCount == 4)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = txtDisplay.Text + "8";
+                                           }
+                 if (pressCount == 5)
+                 {
+                     txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                     txtDisplay.Text = txtDisplay.Text + "A";
+                 }
+
+                 if (pressCount == 6)
+                 {
+                     txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                     txtDisplay.Text = txtDisplay.Text + "B";
+                 }
+
+                 if (pressCount == 7)
+                 {
+                     txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                     txtDisplay.Text = txtDisplay.Text + "C";
+                     pressCount = 0;
+                 }
+
+
 		}
 
         private void timerPress_Tick(object sender, EventArgs e)
@@ -100,6 +118,11 @@ check = 0;
 					
                    
 			}
+        }
+
+        private void txtDisplay_TextChanged(object sender, EventArgs e)
+        {
+
         }
         }
     }

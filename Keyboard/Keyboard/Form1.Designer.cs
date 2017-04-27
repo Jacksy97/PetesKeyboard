@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.txtDisplay = new System.Windows.Forms.TextBox();
+            this.txtPrint = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtDisplay = new System.Windows.Forms.TextBox();
             this.txtStatus = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.btnMode = new System.Windows.Forms.Button();
@@ -61,13 +61,14 @@
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtDisplay
+            // txtPrint
             // 
-            this.txtDisplay.Location = new System.Drawing.Point(13, 33);
-            this.txtDisplay.Multiline = true;
-            this.txtDisplay.Name = "txtDisplay";
-            this.txtDisplay.Size = new System.Drawing.Size(679, 250);
-            this.txtDisplay.TabIndex = 0;
+            this.txtPrint.Location = new System.Drawing.Point(13, 33);
+            this.txtPrint.Multiline = true;
+            this.txtPrint.Name = "txtPrint";
+            this.txtPrint.Size = new System.Drawing.Size(679, 250);
+            this.txtPrint.TabIndex = 0;
+            this.txtPrint.TextChanged += new System.EventHandler(this.txtDisplay_TextChanged);
             // 
             // toolStrip1
             // 
@@ -105,12 +106,12 @@
             this.textBox2.Size = new System.Drawing.Size(338, 40);
             this.textBox2.TabIndex = 2;
             // 
-            // textBox3
+            // txtDisplay
             // 
-            this.textBox3.Location = new System.Drawing.Point(193, 321);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(237, 20);
-            this.textBox3.TabIndex = 3;
+            this.txtDisplay.Location = new System.Drawing.Point(193, 321);
+            this.txtDisplay.Name = "txtDisplay";
+            this.txtDisplay.Size = new System.Drawing.Size(237, 20);
+            this.txtDisplay.TabIndex = 3;
             // 
             // txtStatus
             // 
@@ -352,10 +353,10 @@
             this.Controls.Add(this.btnMode);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.txtStatus);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtDisplay);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.txtDisplay);
+            this.Controls.Add(this.txtPrint);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Mini Keyboard V1.0";
@@ -368,12 +369,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtDisplay;
+        private System.Windows.Forms.TextBox txtPrint;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtDisplay;
         private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button btnMode;
