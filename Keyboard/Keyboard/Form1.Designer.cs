@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDisplay = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
@@ -42,7 +43,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btn8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -56,16 +57,17 @@
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
+            this.timerPress = new System.Windows.Forms.Timer(this.components);
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtDisplay
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 33);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(679, 250);
-            this.textBox1.TabIndex = 0;
+            this.txtDisplay.Location = new System.Drawing.Point(13, 33);
+            this.txtDisplay.Multiline = true;
+            this.txtDisplay.Name = "txtDisplay";
+            this.txtDisplay.Size = new System.Drawing.Size(679, 250);
+            this.txtDisplay.TabIndex = 0;
             // 
             // toolStrip1
             // 
@@ -180,15 +182,16 @@
             this.button5.Text = "7\r\n. , \"\r\n";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btn8
             // 
-            this.button6.BackColor = System.Drawing.Color.LightCoral;
-            this.button6.Location = new System.Drawing.Point(274, 430);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 57);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "8\r\nA B C\r\n";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btn8.BackColor = System.Drawing.Color.LightCoral;
+            this.btn8.Location = new System.Drawing.Point(274, 430);
+            this.btn8.Name = "btn8";
+            this.btn8.Size = new System.Drawing.Size(75, 57);
+            this.btn8.TabIndex = 11;
+            this.btn8.Text = "8\r\nA B C\r\n";
+            this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -318,6 +321,11 @@
             this.button19.TabIndex = 24;
             this.button19.UseVisualStyleBackColor = false;
             // 
+            // timerPress
+            // 
+            this.timerPress.Interval = 500;
+            this.timerPress.Tick += new System.EventHandler(this.timerPress_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -336,7 +344,7 @@
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btn8);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -347,7 +355,7 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDisplay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Mini Keyboard V1.0";
@@ -360,7 +368,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDisplay;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
@@ -373,7 +381,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
@@ -387,6 +395,7 @@
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Timer timerPress;
     }
 }
 
