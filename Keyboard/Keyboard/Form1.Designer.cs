@@ -35,7 +35,7 @@
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtStatus = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.btnMode = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -110,15 +110,15 @@
             this.textBox3.Size = new System.Drawing.Size(237, 20);
             this.textBox3.TabIndex = 3;
             // 
-            // textBox4
+            // txtStatus
             // 
-            this.textBox4.Location = new System.Drawing.Point(436, 321);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(75, 20);
-            this.textBox4.TabIndex = 4;
-            this.textBox4.Text = "Multi Press";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtStatus.Location = new System.Drawing.Point(436, 321);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.ReadOnly = true;
+            this.txtStatus.Size = new System.Drawing.Size(75, 20);
+            this.txtStatus.TabIndex = 4;
+            this.txtStatus.Text = "Multi Press";
+            this.txtStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox5
             // 
@@ -138,6 +138,7 @@
             this.btnMode.TabIndex = 6;
             this.btnMode.Text = "Mode";
             this.btnMode.UseVisualStyleBackColor = false;
+            this.btnMode.Click += new System.EventHandler(this.btnMode_Click);
             // 
             // button2
             // 
@@ -342,7 +343,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnMode);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.toolStrip1);
@@ -365,7 +366,7 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button btnMode;
         private System.Windows.Forms.Button button2;
