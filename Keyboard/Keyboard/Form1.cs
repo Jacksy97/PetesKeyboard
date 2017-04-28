@@ -656,7 +656,7 @@ delay =  (My_Dialogs.InputBox("Please enter the 'Delay Value' you require, 1000 
         {
             openFileDialog1.ShowDialog();
 
-            FilePath = this.openFileDialog1.FileName;
+            FilePath = openFileDialog1.FileName;
             if (FilePath != "")
             {
                 StreamReader reader = File.OpenText(FilePath);
@@ -666,6 +666,16 @@ delay =  (My_Dialogs.InputBox("Please enter the 'Delay Value' you require, 1000 
                 }
                 reader.Close();
             }
+        }
+
+        
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Text = "";
+            txtPrint.Text = "";
+            Str_KeyStrokes = "";
+
         }
 
 
