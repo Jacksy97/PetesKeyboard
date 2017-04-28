@@ -624,6 +624,7 @@ namespace Keyboard
         {
             txtPrint.Text = txtPrint.Text + txtDisplay.Text + " ";
             txtDisplay.Text = "";
+            Str_KeyStrokes = "";
         }
 
         private void btnEnter_Click(object sender, EventArgs e)
