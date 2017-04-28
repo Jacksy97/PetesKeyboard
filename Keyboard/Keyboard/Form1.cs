@@ -678,6 +678,11 @@ delay =  (My_Dialogs.InputBox("Please enter the 'Delay Value' you require, 1000 
 
         }
 
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
 
     }
 
