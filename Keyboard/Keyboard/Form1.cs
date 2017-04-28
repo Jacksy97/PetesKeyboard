@@ -399,7 +399,125 @@ check = 0;
             }
         }
 
+        private void button14_Click(object sender, EventArgs e)
+        {
+              timerPress.Stop();
+                timerPress.Start();
+
+                pressCount = pressCount + 1;
+
+                if (pressCount == 1)
+                {
+
+                    txtDisplay.Text = (txtDisplay.Text + ("t"));
+
+                }
+
+                if (pressCount == 2)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + "u";
+                }
+
+                if (pressCount == 3)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + "v";
+
+                }
+                if (pressCount == 4)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + "w";
+                }
+                if (pressCount == 5)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + "2";
+                }
+
+                if (pressCount == 6)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + "T";
+                }
+
+                if (pressCount == 7)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + "U";
+                    
+                }
+
+                if (pressCount == 8)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + "V";
+                    
+                }
+
+                if (pressCount == 7)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + "W";
+                    pressCount = 0;
+                }
+            }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            {
+                timerPress.Stop();
+                timerPress.Start();
+
+                pressCount = pressCount + 1;
+
+                if (pressCount == 1)
+                {
+
+                    txtDisplay.Text = (txtDisplay.Text + ("x"));
+
+                }
+
+                if (pressCount == 2)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + "y";
+                }
+
+                if (pressCount == 3)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + "z";
+
+                }
+                if (pressCount == 4)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + "3";
+                }
+                if (pressCount == 5)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + "X";
+                }
+
+                if (pressCount == 6)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + "Y";
+                }
+
+                if (pressCount == 7)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + "Z";
+                    pressCount = 0;
+                }
+            }
+        }
+        }
+
 
         }
-    }
 

@@ -51,8 +51,8 @@
             this.btn6 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
@@ -268,25 +268,27 @@
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
-            // button14
+            // btn2
             // 
-            this.button14.BackColor = System.Drawing.Color.LightCoral;
-            this.button14.Location = new System.Drawing.Point(274, 556);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 57);
-            this.button14.TabIndex = 19;
-            this.button14.Text = "2\r\nT U V W";
-            this.button14.UseVisualStyleBackColor = false;
+            this.btn2.BackColor = System.Drawing.Color.LightCoral;
+            this.btn2.Location = new System.Drawing.Point(274, 556);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(75, 57);
+            this.btn2.TabIndex = 19;
+            this.btn2.Text = "2\r\nT U V W";
+            this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.button14_Click);
             // 
-            // button15
+            // btn3
             // 
-            this.button15.BackColor = System.Drawing.Color.LightCoral;
-            this.button15.Location = new System.Drawing.Point(355, 556);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 57);
-            this.button15.TabIndex = 20;
-            this.button15.Text = "3\r\nX Y Z\r\n";
-            this.button15.UseVisualStyleBackColor = false;
+            this.btn3.BackColor = System.Drawing.Color.LightCoral;
+            this.btn3.Location = new System.Drawing.Point(355, 556);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(75, 57);
+            this.btn3.TabIndex = 20;
+            this.btn3.Text = "3\r\nX Y Z\r\n";
+            this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // button16
             // 
@@ -341,8 +343,8 @@
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
-            this.Controls.Add(this.button15);
-            this.Controls.Add(this.button14);
+            this.Controls.Add(this.btn3);
+            this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.btn6);
@@ -395,8 +397,8 @@
         private System.Windows.Forms.Button btn6;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
