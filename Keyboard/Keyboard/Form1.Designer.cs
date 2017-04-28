@@ -49,7 +49,7 @@
             this.btn4 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
             this.btn6 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btnEnter = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
@@ -248,15 +248,16 @@
             this.btn6.UseVisualStyleBackColor = false;
             this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
-            // button12
+            // btnEnter
             // 
-            this.button12.BackColor = System.Drawing.Color.Yellow;
-            this.button12.Location = new System.Drawing.Point(436, 556);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 120);
-            this.button12.TabIndex = 17;
-            this.button12.Text = "Enter";
-            this.button12.UseVisualStyleBackColor = false;
+            this.btnEnter.BackColor = System.Drawing.Color.Yellow;
+            this.btnEnter.Location = new System.Drawing.Point(436, 556);
+            this.btnEnter.Name = "btnEnter";
+            this.btnEnter.Size = new System.Drawing.Size(75, 120);
+            this.btnEnter.TabIndex = 17;
+            this.btnEnter.Text = "Enter";
+            this.btnEnter.UseVisualStyleBackColor = false;
+            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
             // 
             // btn1
             // 
@@ -350,7 +351,7 @@
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
-            this.Controls.Add(this.button12);
+            this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.btn6);
             this.Controls.Add(this.btn5);
             this.Controls.Add(this.btn4);
@@ -399,7 +400,7 @@
         private System.Windows.Forms.Button btn4;
         private System.Windows.Forms.Button btn5;
         private System.Windows.Forms.Button btn6;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnEnter;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;

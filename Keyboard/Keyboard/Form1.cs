@@ -622,8 +622,13 @@ namespace Keyboard
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            txtPrint.Text = txtDisplay.Text;
+            txtPrint.Text = txtPrint.Text + txtDisplay.Text + " ";
             txtDisplay.Text = "";
+        }
+
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+            txtPrint.AppendText(Environment.NewLine);
         }
 
 
