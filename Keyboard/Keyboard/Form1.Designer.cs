@@ -54,8 +54,8 @@
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btnChar = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
+            this.btnSend = new System.Windows.Forms.Button();
+            this.btnChar2 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.timerPress = new System.Windows.Forms.Timer(this.components);
             this.toolStrip1.SuspendLayout();
@@ -302,25 +302,27 @@
             this.btnChar.UseVisualStyleBackColor = false;
             this.btnChar.Click += new System.EventHandler(this.btnChar_Click);
             // 
-            // button17
+            // btnSend
             // 
-            this.button17.BackColor = System.Drawing.Color.PaleGreen;
-            this.button17.Location = new System.Drawing.Point(274, 616);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(75, 57);
-            this.button17.TabIndex = 22;
-            this.button17.Text = "0\r\n[ _ ]";
-            this.button17.UseVisualStyleBackColor = false;
+            this.btnSend.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnSend.Location = new System.Drawing.Point(274, 616);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(75, 57);
+            this.btnSend.TabIndex = 22;
+            this.btnSend.Text = "0\r\n[ _ ]";
+            this.btnSend.UseVisualStyleBackColor = false;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
-            // button18
+            // btnChar2
             // 
-            this.button18.BackColor = System.Drawing.Color.LightCoral;
-            this.button18.Location = new System.Drawing.Point(355, 616);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 57);
-            this.button18.TabIndex = 23;
-            this.button18.Text = "#\r\n0 00";
-            this.button18.UseVisualStyleBackColor = false;
+            this.btnChar2.BackColor = System.Drawing.Color.LightCoral;
+            this.btnChar2.Location = new System.Drawing.Point(355, 616);
+            this.btnChar2.Name = "btnChar2";
+            this.btnChar2.Size = new System.Drawing.Size(75, 57);
+            this.btnChar2.TabIndex = 23;
+            this.btnChar2.Text = "#\r\n0 00";
+            this.btnChar2.UseVisualStyleBackColor = false;
+            this.btnChar2.Click += new System.EventHandler(this.btnChar2_Click);
             // 
             // button19
             // 
@@ -342,8 +344,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(704, 695);
             this.Controls.Add(this.button19);
-            this.Controls.Add(this.button18);
-            this.Controls.Add(this.button17);
+            this.Controls.Add(this.btnChar2);
+            this.Controls.Add(this.btnSend);
             this.Controls.Add(this.btnChar);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
@@ -402,8 +404,8 @@
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btnChar;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.Button btnChar2;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Timer timerPress;
     }

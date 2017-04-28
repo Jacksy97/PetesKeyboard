@@ -16,6 +16,8 @@ namespace Keyboard
         int ModeCount = 0;
         int pressCount;
         int check;
+        string Str_KeyStrokes;
+
 
 
 
@@ -64,7 +66,7 @@ namespace Keyboard
 
             if (pressCount == 1)
             {
-
+                Str_KeyStrokes = Str_KeyStrokes + "8";
                 txtDisplay.Text = (txtDisplay.Text + ("a"));
 
             }
@@ -137,7 +139,7 @@ namespace Keyboard
 
             if (pressCount == 1)
             {
-
+                Str_KeyStrokes = Str_KeyStrokes + "9";
                 txtDisplay.Text = (txtDisplay.Text + ("d"));
 
             }
@@ -190,6 +192,7 @@ namespace Keyboard
             {
 
                 txtDisplay.Text = (txtDisplay.Text + ("g"));
+                Str_KeyStrokes = Str_KeyStrokes + "4";
 
             }
 
@@ -242,6 +245,7 @@ namespace Keyboard
                 {
 
                     txtDisplay.Text = (txtDisplay.Text + ("j"));
+                    Str_KeyStrokes = Str_KeyStrokes + "5";
 
                 }
 
@@ -295,6 +299,7 @@ namespace Keyboard
                 {
 
                     txtDisplay.Text = (txtDisplay.Text + ("m"));
+                    Str_KeyStrokes = Str_KeyStrokes + "6";
 
                 }
 
@@ -348,6 +353,7 @@ namespace Keyboard
                 {
 
                     txtDisplay.Text = (txtDisplay.Text + ("p"));
+                    Str_KeyStrokes = Str_KeyStrokes + "1";
 
                 }
 
@@ -414,6 +420,7 @@ namespace Keyboard
             {
 
                 txtDisplay.Text = (txtDisplay.Text + ("t"));
+                Str_KeyStrokes = Str_KeyStrokes + "2";
 
             }
 
@@ -480,6 +487,7 @@ namespace Keyboard
                 {
 
                     txtDisplay.Text = (txtDisplay.Text + ("x"));
+                    Str_KeyStrokes = Str_KeyStrokes + "3";
 
                 }
 
@@ -582,6 +590,40 @@ namespace Keyboard
                 txtDisplay.Text = (txtDisplay.Text + '_');
 
             }
+        }
+
+        private void btnChar2_Click(object sender, EventArgs e)
+        {
+            timerPress.Stop();
+            timerPress.Start();
+
+            pressCount = pressCount + 1;
+
+            if (pressCount == 1)
+            {
+
+                txtDisplay.Text = (txtDisplay.Text + ("#"));
+
+            }
+
+            if (pressCount == 2)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = txtDisplay.Text + "-";
+            }
+
+            if (pressCount == 3)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = (txtDisplay.Text + '_');
+
+            }
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            txtPrint.Text = txtDisplay.Text;
+            txtDisplay.Text = "";
         }
 
 
