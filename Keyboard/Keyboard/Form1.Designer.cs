@@ -58,6 +58,7 @@
             this.btnChar2 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.timerPress = new System.Windows.Forms.Timer(this.components);
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,6 +97,7 @@
             this.toolStripLabel2.Name = "toolStripLabel2";
             this.toolStripLabel2.Size = new System.Drawing.Size(75, 22);
             this.toolStripLabel2.Text = "Configurator";
+            this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
             // 
             // textBox2
             // 
@@ -339,6 +341,10 @@
             this.timerPress.Interval = 500;
             this.timerPress.Tick += new System.EventHandler(this.timerPress_Tick);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,6 +415,7 @@
         private System.Windows.Forms.Button btnChar2;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Timer timerPress;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

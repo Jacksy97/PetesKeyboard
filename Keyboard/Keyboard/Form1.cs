@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MyDialogs;
 
 
 namespace Keyboard
@@ -17,7 +18,8 @@ namespace Keyboard
         int pressCount;
         int check;
         string Str_KeyStrokes;
-
+        int num;
+        string delay = "500";
 
 
 
@@ -630,6 +632,20 @@ namespace Keyboard
         private void btnEnter_Click(object sender, EventArgs e)
         {
             txtPrint.AppendText(Environment.NewLine);
+        }
+
+        private void toolStripLabel2_Click(object sender, EventArgs e)
+        {
+           delay =  (My_Dialogs.InputBox("Please enter the 'Delay Value' you require, 1000 is equal to a 1 second delay. At present the Delay Value is " + delay + "."));
+           num = Convert.ToInt16(delay);
+           
+            if (num < 500)
+            {
+                num = 500;
+                delay = "500";
+            }
+            timerPress.Interval = num;
+            
         }
 
 
