@@ -12,19 +12,20 @@ using System.Windows.Forms;
 namespace Keyboard
 {
     public partial class Form1 : Form
-    {int ModeCount = 0;
-    int pressCount;
-    int check;
-    
+    {
+        int ModeCount = 0;
+        int pressCount;
+        int check;
 
-        
-  
-        
+
+
+
+
         public Form1()
         {
             InitializeComponent();
             timerPress.Interval = 500;
-            
+
         }
 
         private void toolStripLabel1_Click(object sender, EventArgs e)
@@ -34,16 +35,18 @@ namespace Keyboard
 
         private void btnMode_Click(object sender, EventArgs e)
         {
-            
 
-            if (ModeCount == 0) {
+
+            if (ModeCount == 0)
+            {
 
                 ModeCount = 1;
                 txtStatus.Text = "Multi Press";
 
 
 
-            }else if (ModeCount == 1)
+            }
+            else if (ModeCount == 1)
             {
                 ModeCount = 0;
                 txtStatus.Text = "Prediction";
@@ -59,8 +62,9 @@ namespace Keyboard
 
             pressCount = pressCount + 1;
 
-            if (pressCount == 1){
-                
+            if (pressCount == 1)
+            {
+
                 txtDisplay.Text = (txtDisplay.Text + ("a"));
 
             }
@@ -68,8 +72,8 @@ namespace Keyboard
             if (pressCount == 2)
             {
                 txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
-              txtDisplay.Text = txtDisplay.Text + "b";
-                       }
+                txtDisplay.Text = txtDisplay.Text + "b";
+            }
 
             if (pressCount == 3)
             {
@@ -77,32 +81,32 @@ namespace Keyboard
                 txtDisplay.Text = txtDisplay.Text + "c";
 
             }
-                 if (pressCount == 4)
+            if (pressCount == 4)
             {
                 txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
                 txtDisplay.Text = txtDisplay.Text + "8";
-                                           }
-                 if (pressCount == 5)
-                 {
-                     txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
-                     txtDisplay.Text = txtDisplay.Text + "A";
-                 }
+            }
+            if (pressCount == 5)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = txtDisplay.Text + "A";
+            }
 
-                 if (pressCount == 6)
-                 {
-                     txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
-                     txtDisplay.Text = txtDisplay.Text + "B";
-                 }
+            if (pressCount == 6)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = txtDisplay.Text + "B";
+            }
 
-                 if (pressCount == 7)
-                 {
-                     txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
-                     txtDisplay.Text = txtDisplay.Text + "C";
-                     pressCount = 0;
-                 }
+            if (pressCount == 7)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = txtDisplay.Text + "C";
+                pressCount = 0;
+            }
 
 
-		}
+        }
 
         private void timerPress_Tick(object sender, EventArgs e)
         {
@@ -110,13 +114,13 @@ namespace Keyboard
 
                 if (timerPress.Interval >= 500)
                 {
-this.pressCount = 0;
-check = 0;
+                    this.pressCount = 0;
+                    check = 0;
                 } check = timerPress.Interval;
-               
-					
-                   
-			}
+
+
+
+            }
         }
 
         private void txtDisplay_TextChanged(object sender, EventArgs e)
@@ -380,14 +384,14 @@ check = 0;
                 {
                     txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
                     txtDisplay.Text = txtDisplay.Text + "Q";
-                    
+
                 }
 
                 if (pressCount == 8)
                 {
                     txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
                     txtDisplay.Text = txtDisplay.Text + "R";
-                    
+
                 }
 
                 if (pressCount == 7)
@@ -401,68 +405,68 @@ check = 0;
 
         private void button14_Click(object sender, EventArgs e)
         {
-              timerPress.Stop();
-                timerPress.Start();
+            timerPress.Stop();
+            timerPress.Start();
 
-                pressCount = pressCount + 1;
+            pressCount = pressCount + 1;
 
-                if (pressCount == 1)
-                {
+            if (pressCount == 1)
+            {
 
-                    txtDisplay.Text = (txtDisplay.Text + ("t"));
+                txtDisplay.Text = (txtDisplay.Text + ("t"));
 
-                }
-
-                if (pressCount == 2)
-                {
-                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
-                    txtDisplay.Text = txtDisplay.Text + "u";
-                }
-
-                if (pressCount == 3)
-                {
-                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
-                    txtDisplay.Text = txtDisplay.Text + "v";
-
-                }
-                if (pressCount == 4)
-                {
-                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
-                    txtDisplay.Text = txtDisplay.Text + "w";
-                }
-                if (pressCount == 5)
-                {
-                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
-                    txtDisplay.Text = txtDisplay.Text + "2";
-                }
-
-                if (pressCount == 6)
-                {
-                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
-                    txtDisplay.Text = txtDisplay.Text + "T";
-                }
-
-                if (pressCount == 7)
-                {
-                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
-                    txtDisplay.Text = txtDisplay.Text + "U";
-                    
-                }
-
-                if (pressCount == 8)
-                {
-                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
-                    txtDisplay.Text = txtDisplay.Text + "V";
-                    
-                }
-
-                if (pressCount == 7)
-                {
-                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
-                    txtDisplay.Text = txtDisplay.Text + "W";
-                    pressCount = 0;
-                }
             }
+
+            if (pressCount == 2)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = txtDisplay.Text + "u";
+            }
+
+            if (pressCount == 3)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = txtDisplay.Text + "v";
+
+            }
+            if (pressCount == 4)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = txtDisplay.Text + "w";
+            }
+            if (pressCount == 5)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = txtDisplay.Text + "2";
+            }
+
+            if (pressCount == 6)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = txtDisplay.Text + "T";
+            }
+
+            if (pressCount == 7)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = txtDisplay.Text + "U";
+
+            }
+
+            if (pressCount == 8)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = txtDisplay.Text + "V";
+
+            }
+
+            if (pressCount == 7)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = txtDisplay.Text + "W";
+                pressCount = 0;
+            }
+        }
 
         private void btn3_Click(object sender, EventArgs e)
         {
@@ -516,8 +520,72 @@ check = 0;
                 }
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            {
+                timerPress.Stop();
+                timerPress.Start();
+
+                pressCount = pressCount + 1;
+
+                if (pressCount == 1)
+                {
+
+                    txtDisplay.Text = (txtDisplay.Text + ("."));
+
+                }
+
+                if (pressCount == 2)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + ",";
+                }
+
+                if (pressCount == 3)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = (txtDisplay.Text + '\u0022');
+
+                }
+                if (pressCount == 4)
+                {
+                    txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                    txtDisplay.Text = txtDisplay.Text + "7";
+                }
+            }
+        }
+
+        private void btnChar_Click(object sender, EventArgs e)
+        {
+            timerPress.Stop();
+            timerPress.Start();
+
+            pressCount = pressCount + 1;
+
+            if (pressCount == 1)
+            {
+
+                txtDisplay.Text = (txtDisplay.Text + ("*"));
+
+            }
+
+            if (pressCount == 2)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = txtDisplay.Text + "-";
+            }
+
+            if (pressCount == 3)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1);
+                txtDisplay.Text = (txtDisplay.Text + '_');
+
+            }
         }
 
 
-        }
+    }
+
+}
 

@@ -42,7 +42,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btn7 = new System.Windows.Forms.Button();
             this.btn8 = new System.Windows.Forms.Button();
             this.btn9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -53,7 +53,7 @@
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.btnChar = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
@@ -173,15 +173,16 @@
             this.button4.Text = "Send Predicted";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btn7
             // 
-            this.button5.BackColor = System.Drawing.Color.LightCoral;
-            this.button5.Location = new System.Drawing.Point(193, 430);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 57);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "7\r\n. , \"\r\n";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btn7.BackColor = System.Drawing.Color.LightCoral;
+            this.btn7.Location = new System.Drawing.Point(193, 430);
+            this.btn7.Name = "btn7";
+            this.btn7.Size = new System.Drawing.Size(75, 57);
+            this.btn7.TabIndex = 10;
+            this.btn7.Text = "7\r\n. , \"\r\n";
+            this.btn7.UseVisualStyleBackColor = false;
+            this.btn7.Click += new System.EventHandler(this.button5_Click);
             // 
             // btn8
             // 
@@ -290,15 +291,16 @@
             this.btn3.UseVisualStyleBackColor = false;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
-            // button16
+            // btnChar
             // 
-            this.button16.BackColor = System.Drawing.Color.LightCoral;
-            this.button16.Location = new System.Drawing.Point(193, 616);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(75, 57);
-            this.button16.TabIndex = 21;
-            this.button16.Text = "* - _";
-            this.button16.UseVisualStyleBackColor = false;
+            this.btnChar.BackColor = System.Drawing.Color.LightCoral;
+            this.btnChar.Location = new System.Drawing.Point(193, 616);
+            this.btnChar.Name = "btnChar";
+            this.btnChar.Size = new System.Drawing.Size(75, 57);
+            this.btnChar.TabIndex = 21;
+            this.btnChar.Text = "* - _";
+            this.btnChar.UseVisualStyleBackColor = false;
+            this.btnChar.Click += new System.EventHandler(this.btnChar_Click);
             // 
             // button17
             // 
@@ -342,7 +344,7 @@
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
-            this.Controls.Add(this.button16);
+            this.Controls.Add(this.btnChar);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
@@ -353,7 +355,7 @@
             this.Controls.Add(this.button8);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn8);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btn7);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -388,7 +390,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Button button8;
@@ -399,7 +401,7 @@
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btnChar;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
